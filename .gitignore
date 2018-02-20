@@ -1,0 +1,5 @@
+.env.local
+bin/
+debug.test
+debug
+.vscode
