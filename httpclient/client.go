@@ -1,6 +1,7 @@
 package httpclient
 
 import (
+	"context"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -34,6 +35,7 @@ type Request struct {
 	basicAuthUser      string
 	basicAuthPass      string
 	allowedStatusCodes []int
+	context            context.Context
 	sync.RWMutex
 }
 
